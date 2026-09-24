@@ -1,0 +1,26 @@
+{
+  "name": "graphiql-pr-4218-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@10.34.5",
+  "scripts": {
+    "dev": "concurrently -k -n api,web 'node --watch server.mjs' 'vite'",
+    "build": "vite build",
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "@graphiql/toolkit-pr": "github:rushrs/graphiql#codex/add-sse-subscription-fetcher&path:/packages/graphiql-toolkit",
+    "graphql": "^16.13.2",
+    "graphql-sse": "^2.6.1",
+    "graphql-yoga": "^5.24.1",
+    "graphiql": "^5.4.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.4",
+    "concurrently": "^9.2.1",
+    "vite": "^7.3.1"
+  }
+}
