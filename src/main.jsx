@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { GraphiQL } from 'graphiql';
 import { createGraphiQLFetcher } from '@graphiql/toolkit-pr/src/create-fetcher/index.ts';
 import 'graphiql/style.css';
+import './main.css';
 
 const fetcher = createGraphiQLFetcher({
   url: '/graphql',
